@@ -5,8 +5,13 @@
 <body>
   <div class="container">
     <header>
+      <h1>Rachel, seriously, $git itdone.</h1>
+
+      <form class="new-task">
+        <input type="text" name="text" placeholder="What to do?"/>
+      </form>
+
       <ul>
-        <h1>Rachel, seriously, $git itdone.</h1>
         <h2>
           {{#each tasks}}
           {{> task}}
