@@ -1,0 +1,22 @@
+<head>
+  <title>Rachel's To Do List</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <ul>
+        <h1>Rachel, seriously, $git itdone.</h1>
+        <h2>
+          {{#each tasks}}
+          {{> task}}
+          {{/each}}
+        </h2>
+      </ul>
+    </header>
+  </div>
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
